@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c425e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <h2> <span>Port</span>folio</h2> 
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-time" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER.</p>
+                <h1>Hi! I'm <span>Sipho</span> <br> Skosana from <span>Mpumalanga.</span></h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------------------------about------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background22.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Sipho Skosana from Mpumalanga. A 22- years old 
+                       recent Bachelor of Science with Computer Science and Electronics graduate from North-West 
+                       University with passion for problem-solving and hands-on experience in software development,
+                       networking, and cybersecurity. Enthusiastic about learning and applying technicalskills in 
+                       real-world scenarios. Eager to contribute and grow through an Internship opportunity. Commited
+                       to continuous growth and ready to contribute to innovative Computer Science solutions.
+                    </p>
+
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages:</span><br>C++, Python, Java, Javascript, React, HTML, CSS, SQL, Assembly.</li>
+                            <li><span>Tools:</span><br>VS Code, Code::Blocks, NetBeans, Blue J.</li>
+                            <li><span>Networking:</span><br>IPv4 firewall, basic routing.</li>
+                            <li><span>Soft Skills:</span><br>Self-motivated and eagr to learn, Excellent problem-skill, Works well independently and in terms, Strong communicaton and attention to details, Ready to relocate or work hybrid.</li>
+
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>2025</span><br>- Movie App (Solo)</li>
+                            <li><span>2025</span><br>- Personal Portfolio (Solo)</li>
+                            <li><span>2024</span><br>- Landing Page (Solo)</li>
+                            <li><span>2024</span><br>- Firewall Rule IPv4 Configuration (Solo)</li>
+                            <li><span>2023</span><br>- Weather App (Solo)</li>
+                            <li><span>2023</span><br>- SQL Database (Team)</li>
+                            <li><span>2022</span><br>- Library Management System (Team - Frontend)</li>      
+
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>2021</span><br> - Grade 12 Matric.</li>
+                            <li><span>2022 - 2024</span><br>Bachelor of Science with Computr Science and Electronics from North-West University.</li>
+                            <li><span>2024 December</span><br>One-week online Cybersecurity certificate.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-----------------------------------services--------------------------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web & App Development</h2>
+                <p>Responsive websites using HTML, CSS, JavaScript, and React with clean UI.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Cybersecurity Basics</h2>
+                <p>Understanding of security fundamentals and implemented of basic firewall rules.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Database Design</h2>
+                <p>Experince in working with relational databases and writing SQL queries.</p>
+                    <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+   </div>
+   <!-------------------------------------portfolio----------------------------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/user1.jpeg">
+                <div class="layer">
+                    <h3>Movie App</h3>
+                    <p>Built with real API integration to fetch and display live move data.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/user1.jpeg">
+                <div class="layer">
+                    <h3>Landing Page</h3>
+                    <p>sOLO PROJECT SHOWCASING CLEAN UI/UX design.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/user1.jpeg">
+                <div class="layer">
+                    <h3>Lost and Found Website</h3>
+                    <p>The website collect and store the information provided by the user.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+   </div>
+   <!--------------------------------------contact------------------------------------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> siphopaulskosana@gmail.com.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 082 843 5402</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Curriculum Vitae of Sipho Paulos Skosana.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>2025 Sipho Skosana.<i class="fas fa-heart"> Built with ❤️ using HTML & CSS.</i> </p>
+    </div>
+   </div>
+
+    
+    
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
